@@ -125,6 +125,7 @@ void getSnakeInfo()
 	Snake slither(name, breed, weight, length, isVenom);
 
 	slither.displayInfo(name, breed, weight, length, isVenom);
+	slither.weightMessage(weight);
 
 	// Print to File?
 
@@ -177,7 +178,7 @@ void getDogInfo()
 	getline(cin, color);
 
 	//cin.ignore(); // Flush the newline character
-	cout << "\tEnter the dog's energy level (low, mid, high, etc.): ";
+	cout << "\tEnter the dog's energy level (low, mid, high): ";
 	getline(cin, energy);
 
 	// Create Dog instance and print info to console
@@ -185,6 +186,7 @@ void getDogInfo()
 	Dog doggo(name, breed, weight, color, energy);
 
 	doggo.displayInfo(name, breed, weight, color, energy);
+	doggo.energyMessage(energy);
 
 	// Print to File?
 

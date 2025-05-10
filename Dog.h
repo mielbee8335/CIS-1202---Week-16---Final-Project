@@ -30,6 +30,8 @@ public:
 
 	void displayInfo(string&, string&, double, string&, string&);
 
+	void energyMessage(string&);
+
 };
 
 #endif 

@@ -1,5 +1,6 @@
 #include "Snake.h"
 #include<string>
+#include<cmath>
 
 using namespace std;
 
@@ -61,4 +62,10 @@ void Snake::displayInfo(string& name, string& breed, double weight, double lengt
 	cout << "\tVenomous Snake? : " << getIsVenomous();
 	
 	cout << endl;
+}
+
+void Snake::weightMessage(double weight)
+{
+	if (ceil(weight) > 15)
+		cout << "Warning! Your snake may be overweight, check-in with a vet." << endl;
 }

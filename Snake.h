@@ -30,6 +30,8 @@ public:
 
 	void displayInfo(string&, string&, double, double, bool);
 
+	void weightMessage(double);
+
 };
 
 #endif 
