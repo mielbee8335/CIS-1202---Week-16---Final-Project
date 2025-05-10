@@ -31,6 +31,10 @@ public:
 	void setPetWeight(double);
 	double getPetWeight();
 
+	// Etc.
+
+	void displayInfo(string&, string&, double);
+
 };
 
 
