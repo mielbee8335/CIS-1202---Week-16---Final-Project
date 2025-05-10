@@ -59,4 +59,6 @@ void Snake::displayInfo(string& name, string& breed, double weight, double lengt
 
 	setIsVenomous(isVenomous);
 	cout << "\tVenomous Snake? : " << getIsVenomous();
+	
+	cout << endl;
 }
