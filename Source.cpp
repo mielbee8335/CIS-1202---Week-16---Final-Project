@@ -30,7 +30,7 @@ int main()
 
 	int choice;
 	
-	do
+	do     // Loop through menu of choices until exit is chosen
 	{
 		choice = showMenu();
 
@@ -55,14 +55,19 @@ int main()
 	return 0;
 }
 
+// showMenu() function definition:
+//
+// Shows a menu of choices to the user and prompts user for
+// an int value that corresponds to a numbered choice. 
+// Validates user input then returns it to main()
 
 int showMenu()
 {
 	int input;
 
 	cout << "\nPlease review the following choices:" << endl;
-	cout << "\t1. Add a snake's info." << endl;
-	cout << "\t2. Add a dog's info." << endl;
+	cout << "\t1. Add a pet snake's info." << endl;
+	cout << "\t2. Add a pet dog's info." << endl;
 	cout << "\t3. Exit." << endl;
 	cout << "Enter the number for your choice: ";
 
@@ -110,7 +115,7 @@ void getSnakeInfo()
 
 	cout << "\tIs this snake venomous? Enter Y for yes or N for no: ";
 	cin >> venom;
-	while (tolower(venom) != 'y' && tolower(venom) != 'n')
+	while (tolower(venom) != 'y' && tolower(venom) != 'n') // tolower() accommodates for both upper and lowercase entries
 	{
 		cout << "Invalid entry. Please enter either Y or N: ";
 		cin >> venom;
@@ -243,7 +248,7 @@ void printToFile(string name, string breed, double weight, double length, bool v
 		cerr << "Error opening file." << endl;
 	}
 
-	// driver to test that the file wrote the correct info:
+	// unhide driver to test that the file wrote the correct info:
 
 	/*snakeFile.open("SnakeEntry.dat", ios::in | ios::binary);
 
@@ -290,7 +295,7 @@ void printToFile(string name, string breed, double weight, string color, string 
 		cerr << "Error opening file." << endl;
 	}
 
-	// driver to test that the file wrote the correct info:
+	// unhide driver to test that the file wrote the correct info:
 
 	/*dogFile.open("DogEntry.dat", ios::in | ios::binary);
 
