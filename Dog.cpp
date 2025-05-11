@@ -60,5 +60,5 @@ void Dog::displayInfo(string& name, string& breed, double weight, string& color,
 void Dog::energyMessage(string& energy)
 {
 	if (energy == "low")
-		cout << "\nIf your dog's energy level remains low, check-in with a vet." << endl;
+		cout << "\n** If your dog's energy level remains low for several days, check-in with a vet. **" << endl;
 }

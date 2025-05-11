@@ -117,7 +117,7 @@ void getSnakeInfo()
 	cin >> venom;
 	while (tolower(venom) != 'y' && tolower(venom) != 'n') // tolower() accommodates for both upper and lowercase entries
 	{
-		cout << "Invalid entry. Please enter either Y or N: ";
+		cout << "\tInvalid entry. Please enter either Y or N: ";
 		cin >> venom;
 	}
 	if (tolower(venom) == 'y')
@@ -149,7 +149,7 @@ void getSnakeInfo()
 		printToFile(name, breed, weight, length, isVenom);
 	}
 	else if (tolower(input) == 'n')
-		cout << "Exiting Snake Entry." << endl;
+		cout << "\nExiting Snake Entry." << endl;
 }
 
 
@@ -210,7 +210,7 @@ void getDogInfo()
 		printToFile(name, breed, weight, color, energy);
 	}
 	else if (tolower(input) == 'n')
-		cout << "Exiting Dog Entry." << endl;
+		cout << "\nExiting Dog Entry." << endl;
 
 
 }
@@ -241,11 +241,11 @@ void printToFile(string name, string breed, double weight, double length, bool v
 		snakeFile.write(reinterpret_cast<char*>(&length), sizeof(length));
 		snakeFile.write(reinterpret_cast<char*>(&status), sizeof(status));
 		snakeFile.close();
-		cout << "File Created." << endl;
+		cout << "\tFile Created." << endl;
 	}
 	else
 	{
-		cerr << "Error opening file." << endl;
+		cerr << "\tError opening file." << endl;
 	}
 
 	// unhide driver to test that the file wrote the correct info:
@@ -288,11 +288,11 @@ void printToFile(string name, string breed, double weight, string color, string 
 		dogFile.write(reinterpret_cast<char*>(&color), sizeof(color));
 		dogFile.write(reinterpret_cast<char*>(&energy), sizeof(energy));
 		dogFile.close();
-		cout << "File Created." << endl;
+		cout << "\tFile Created." << endl;
 	}
 	else
 	{
-		cerr << "Error opening file." << endl;
+		cerr << "\tError opening file." << endl;
 	}
 
 	// unhide driver to test that the file wrote the correct info:

@@ -62,5 +62,5 @@ void Pet::displayInfo(string& name, string& breed, double weight)
 	cout << "\tPet Breed: " << getPetBreed();
 
 	setPetWeight(weight);
-	cout << "\tPet Weight: " << getPetWeight() << endl;
+	cout << "\tPet Weight: " << getPetWeight() << " lbs" << endl;
 }

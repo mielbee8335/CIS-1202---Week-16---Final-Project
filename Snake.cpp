@@ -56,7 +56,7 @@ void Snake::displayInfo(string& name, string& breed, double weight, double lengt
 	Pet::displayInfo(name, breed, weight);
 
 	setSnakeLength(length);
-	cout << "\tSnake Length: " << getSnakeLength();
+	cout << "\tSnake Length: " << getSnakeLength() << " in";
 
 	setIsVenomous(isVenomous);
 	cout << "\tVenomous Snake? : " << getIsVenomous();
@@ -67,5 +67,5 @@ void Snake::displayInfo(string& name, string& breed, double weight, double lengt
 void Snake::weightMessage(double weight)
 {
 	if (ceil(weight) > 15)
-		cout << "Warning! Your snake may be overweight, check-in with a vet." << endl;
+		cout << "\n** Warning! Your snake may be overweight, check-in with a vet. **" << endl;
 }
